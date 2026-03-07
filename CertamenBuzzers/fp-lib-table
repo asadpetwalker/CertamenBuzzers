@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Buzzers")(type "KiCad")(uri "${KIPRJMOD}/Buzzers.pretty")(options "")(descr ""))
+)
