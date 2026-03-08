@@ -1,18 +1,18 @@
-Name,Purpose,Cost,QTY,Total,Link,Supplier
-GLF-464-144-521-D,Cables for Buzzers,$1.73,6,$10.38,Link to Listing,Digikey
-12 Buttons,Buzzers,$7.69,1,$7.69,Link to Listing,Amazon
-27Ohm Resistor,MCU,$0.01,10,$0.06,Link to Listing,Digikey
-15pF Capacitor,Crystal Oscillator,$0.03,10,$0.33,Link to Listing,Digikey
-1k Resistor,MCU,$0.01,10,$0.06,Link to Listing,Digikey
-W25Q64JVZPIQ,Memory,$1.43,1,$1.43,Link to Listing,Digikey
-10k Resistors,Buzzers,$0.00,25,$0.12,Link to Listing,Digikey
-12MHz Crystal,RP2040,$0.45,1,$0.45,Link to Listing,Digikey
-RP2040,MCU,$0.70,1,$0.70,Link to Listing,Digikey
-MTJ-662BX2,Receptacle for cable buzzers,$0.21,12,$2.56,Link to Listing,Digikey
-TVS1400,Transient Suppression,$0.57,1,$0.57,Link to Listing,Digikey
-100nF Capacitor,ESP32,$0.01,10,$0.12,Link to Listing,Digikey
-10uF Capacitor,NCP117,$0.02,10,$0.16,Link to Listing,Digikey
-KMR24,Control Buttons,$0.67,2,$1.34,Link to Listing,Digikey
-USB4105,USB For Programming MCU,$0.78,1,$0.78,Link to Listing,Digikey
-PS1240,Buzzer for buzzing,$0.57,4,$2.28,Link to Listing,Digikey
-NCP1117-3.3,3.3V LDO,$0.37,1,$0.37,Link to Listing,Digikey
+Name,Purpose,Cost,QTY,Total Cost,Link,Supplier,$29.40
+GLF-464-144-521-D,Cables for Buzzers,$1.73,6,$10.38,https://www.digikey.com/en/products/detail/i-o-interconnect/GLF-464-144-521-D/773066,Digikey,
+12 Buttons,Buzzers,$7.69,1,$7.69,https://www.amazon.com/MKBKLLJY-Latching-Button-Self-Locking-Terminal/dp/B0CPXMVL59/ref=sr_1_14?crid=7T5G2NKV9HUN&dib=eyJ2IjoiMSJ9.YBFUWINMpivEq3HJ-FI1vE20OD_UHFBndQEzB4qrthxDC_ZJKX_GMShag42HxG1Ppn5w1ppZ7tmVlO4BNLsSz3KnT-x8nJe2zAh_PlAp3loZiVsgFhtYAdlFhvYpqq-b1G5Yi3nNdjAunFeO7ya8_4ALSfL1F67AHCWoJZv6asWtGIV6YIWuoCJocrpfV-kJd0beAgaa3xF3iTV0HwWaZy9xfVTL2pd1aNlvwvMM3vk.lmWmXSoDoa4waGxhfVy-lH7Ke8BrkazWVF2G_T3Xxw4&dib_tag=se&keywords=Buttons%2B2%2Bpin&qid=1772928859&sprefix=buttons%2B2%2Bpin%2Caps%2C177&sr=8-14&th=1,Amazon,
+27Ohm Resistor,MCU,$0.01,10,$0.06,https://www.digikey.com/en/products/detail/yageo/RC0603FR-0727RL/727099,Digikey,
+15pF Capacitor,Crystal Oscillator,$0.03,10,$0.33,https://www.digikey.com/en/products/detail/yageo/CC0603JRNPO9BN150/302794,Digikey,
+1k Resistor,MCU,$0.01,10,$0.06,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077,Digikey,
+W25Q64JVZPIQ,Memory,$1.43,1,$1.43,https://www.digikey.com/en/products/detail/winbond-electronics/W25Q64JVZPIQ/15181953,Digikey,
+10k Resistors,Buzzers,$0.00,25,$0.12,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT10K0/1761433,Digikey,
+12MHz Crystal,RP2040,$0.45,1,$0.45,https://www.digikey.com/en/products/detail/abracon-llc/ABM10-166-12-000MHZ-T3/6140263,Digikey,
+RP2040,MCU,$0.70,1,$0.70,https://www.digikey.com/en/products/detail/raspberry-pi/SC0914-13/14306010,Digikey,
+MTJ-662BX2,Receptacle for cable buzzers,$0.21,12,$2.56,https://www.digikey.com/en/products/detail/adam-tech/MTJ-662BX2/9832250,Digikey,
+TVS1400,Transient Suppression,$0.57,1,$0.57,https://www.digikey.com/en/products/detail/texas-instruments/TVS1400DRVR/8566097,Digikey,
+100nF Capacitor,For RP2040,$0.01,10,$0.12,https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874,Digikey,
+10uF Capacitor,NCP117,$0.02,10,$0.16,https://www.digikey.com/en/products/detail/taiyo-yuden/LMK212BJ106KG-T/930652,Digikey,
+KMR24,Control Buttons,$0.67,2,$1.34,https://www.digikey.com/en/products/detail/c-k/KMR241NG-ULC-LFS/2043217,Digikey,
+USB4105,USB For Programming MCU,$0.78,1,$0.78,https://www.digikey.com/en/products/detail/gct/USB4105-GF-A-120/14559037,Digikey,
+PS1240,Buzzer for buzzing,$0.57,4,$2.28,https://www.digikey.com/en/products/detail/tdk-corporation/PS1240P02BT/935924,Digikey,
+NCP1117-3.3,3.3V LDO,$0.37,1,$0.37,https://www.digikey.com/en/products/detail/onsemi/NCP1117LPST33T3G/2194024,Digikey,
