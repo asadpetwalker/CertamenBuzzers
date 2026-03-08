@@ -1,0 +1,18 @@
+Name,Purpose,Cost,QTY,Total,Link,Supplier
+GLF-464-144-521-D,Cables for Buzzers,$1.73,6,$10.38,Link to Listing,Digikey
+12 Buttons,Buzzers,$7.69,1,$7.69,Link to Listing,Amazon
+27Ohm Resistor,MCU,$0.01,10,$0.06,Link to Listing,Digikey
+15pF Capacitor,Crystal Oscillator,$0.03,10,$0.33,Link to Listing,Digikey
+1k Resistor,MCU,$0.01,10,$0.06,Link to Listing,Digikey
+W25Q64JVZPIQ,Memory,$1.43,1,$1.43,Link to Listing,Digikey
+10k Resistors,Buzzers,$0.00,25,$0.12,Link to Listing,Digikey
+12MHz Crystal,RP2040,$0.45,1,$0.45,Link to Listing,Digikey
+RP2040,MCU,$0.70,1,$0.70,Link to Listing,Digikey
+MTJ-662BX2,Receptacle for cable buzzers,$0.21,12,$2.56,Link to Listing,Digikey
+TVS1400,Transient Suppression,$0.57,1,$0.57,Link to Listing,Digikey
+100nF Capacitor,ESP32,$0.01,10,$0.12,Link to Listing,Digikey
+10uF Capacitor,NCP117,$0.02,10,$0.16,Link to Listing,Digikey
+KMR24,Control Buttons,$0.67,2,$1.34,Link to Listing,Digikey
+USB4105,USB For Programming MCU,$0.78,1,$0.78,Link to Listing,Digikey
+PS1240,Buzzer for buzzing,$0.57,4,$2.28,Link to Listing,Digikey
+NCP1117-3.3,3.3V LDO,$0.37,1,$0.37,Link to Listing,Digikey

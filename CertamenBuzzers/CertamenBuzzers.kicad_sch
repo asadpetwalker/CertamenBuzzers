@@ -5,7 +5,7 @@
 	(uuid "b43f3344-d0bd-486e-a263-136591dff90e")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:RJ45"
+		(symbol "Connector:RJ12"
 			(pin_names
 				(offset 1.016)
 			)
@@ -13,7 +13,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -5.08 13.97 0)
+				(at -5.08 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -21,8 +21,8 @@
 					(justify right)
 				)
 			)
-			(property "Value" "RJ45"
-				(at 2.54 13.97 0)
+			(property "Value" "RJ12"
+				(at 2.54 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -48,7 +48,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -57,7 +57,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "8P8C RJ socket connector"
+			(property "ki_keywords" "6P6C RJ socket connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -66,7 +66,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*"
+			(property "ki_fp_filters" "6P6C* RJ12* RJ18* RJ25*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -75,7 +75,19 @@
 					(hide yes)
 				)
 			)
-			(symbol "RJ45_0_1"
+			(symbol "RJ12_0_1"
+				(polyline
+					(pts
+						(xy -6.35 3.175) (xy -5.08 3.175) (xy -5.08 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
@@ -126,18 +138,6 @@
 				)
 				(polyline
 					(pts
-						(xy -6.35 -3.175) (xy -5.08 -3.175) (xy -5.08 -3.175)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
 						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
 						(xy -6.35 -4.445) (xy -6.35 -4.445)
@@ -152,31 +152,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 5.715) (xy -6.35 5.715)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 4.445) (xy -6.35 4.445)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 3.175) (xy -6.35 3.175) (xy -6.35 3.175)
+						(xy -5.08 4.445) (xy -6.35 4.445) (xy -6.35 4.445)
 					)
 					(stroke
 						(width 0)
@@ -187,8 +163,8 @@
 					)
 				)
 				(rectangle
-					(start 7.62 12.7)
-					(end -7.62 -10.16)
+					(start 7.62 10.16)
+					(end -7.62 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -198,45 +174,9 @@
 					)
 				)
 			)
-			(symbol "RJ45_1_1"
-				(pin passive line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "RJ12_1_1"
 				(pin passive line
 					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 5.08 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -254,7 +194,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 2.54 180)
+					(at 10.16 5.08 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -272,7 +212,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 0 180)
+					(at 10.16 2.54 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -290,7 +230,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -2.54 180)
+					(at 10.16 0 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -308,7 +248,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -5.08 180)
+					(at 10.16 -2.54 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -326,7 +266,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -7.62 180)
+					(at 10.16 -5.08 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -4741,20 +4681,12 @@
 		(uuid "0493f428-a7ad-4940-83cb-9d6186d2064c")
 	)
 	(no_connect
-		(at 262.89 105.41)
-		(uuid "0aed9178-7b2f-4148-9715-0cd6d6f23afc")
-	)
-	(no_connect
 		(at 189.23 73.66)
 		(uuid "1058419d-ae6a-4422-82bd-765e10f80635")
 	)
 	(no_connect
 		(at 262.89 90.17)
 		(uuid "14501dcf-b5e7-40a9-80bb-1c3255e8f3f3")
-	)
-	(no_connect
-		(at 152.4 107.95)
-		(uuid "1808067d-3ab0-400d-b6d2-16c824e22e94")
 	)
 	(no_connect
 		(at 262.89 40.64)
@@ -4781,10 +4713,6 @@
 		(uuid "26765c80-5466-4b78-9ae0-b52fd38205fa")
 	)
 	(no_connect
-		(at 262.89 48.26)
-		(uuid "26f58b29-e58a-4f71-81f0-b091dcb60d69")
-	)
-	(no_connect
 		(at 262.89 95.25)
 		(uuid "309e520d-11b4-41e4-b042-2072726349f5")
 	)
@@ -4793,24 +4721,12 @@
 		(uuid "31137333-4b30-4d92-ae85-8aa0b81065f6")
 	)
 	(no_connect
-		(at 226.06 45.72)
-		(uuid "341a868e-7593-498a-8be6-441168b8bf28")
-	)
-	(no_connect
-		(at 152.4 78.74)
-		(uuid "3517e00e-2adc-4194-bc0b-f0d9a7de8ae9")
-	)
-	(no_connect
 		(at 104.14 107.95)
 		(uuid "377d6587-97a1-4828-84ae-679ac98b9e18")
 	)
 	(no_connect
 		(at 152.4 30.48)
 		(uuid "3d98d429-e4da-4d5f-be02-1f4e3f1c9ad4")
-	)
-	(no_connect
-		(at 262.89 78.74)
-		(uuid "3fb27b39-945b-4cf8-80e2-35f1138d3df0")
 	)
 	(no_connect
 		(at 152.4 60.96)
@@ -4841,10 +4757,6 @@
 		(uuid "52340970-8833-4abc-9357-aec1f5c631b7")
 	)
 	(no_connect
-		(at 152.4 48.26)
-		(uuid "547a195c-4a8b-4e87-acfd-04133e27d903")
-	)
-	(no_connect
 		(at 226.06 30.48)
 		(uuid "572231e7-261f-4892-a634-10794caa8aa4")
 	)
@@ -4859,10 +4771,6 @@
 	(no_connect
 		(at 262.89 73.66)
 		(uuid "596f065b-59bd-41b0-8379-b6e3520923f1")
-	)
-	(no_connect
-		(at 189.23 78.74)
-		(uuid "5a62e14f-db75-47c5-97f9-0f0b60ae7206")
 	)
 	(no_connect
 		(at 189.23 40.64)
@@ -4889,32 +4797,12 @@
 		(uuid "6f583c89-8a00-4547-aa1b-185e03068a0c")
 	)
 	(no_connect
-		(at 152.4 45.72)
-		(uuid "71e4d5eb-3306-440b-bb5b-615eea524f06")
-	)
-	(no_connect
 		(at 226.06 71.12)
 		(uuid "766066da-0305-4f43-8c60-9b958edeb689")
 	)
 	(no_connect
-		(at 226.06 76.2)
-		(uuid "7833e490-f36b-4e83-ab15-65ced2dab307")
-	)
-	(no_connect
-		(at 262.89 76.2)
-		(uuid "7922b759-ea81-44ec-9b84-56d73bac7ddc")
-	)
-	(no_connect
 		(at 226.06 73.66)
 		(uuid "7f267779-d8ac-446b-959f-4a873a71a616")
-	)
-	(no_connect
-		(at 262.89 45.72)
-		(uuid "82af7d9e-b86f-4766-a7aa-d8a0b2cd5fac")
-	)
-	(no_connect
-		(at 226.06 107.95)
-		(uuid "84c4ae5e-cc40-480c-8843-af4a10a8d999")
 	)
 	(no_connect
 		(at 104.14 115.57)
@@ -4953,14 +4841,6 @@
 		(uuid "a31596a1-d320-4a7c-ba6c-1d10c9b4fc68")
 	)
 	(no_connect
-		(at 226.06 48.26)
-		(uuid "a4099f70-5b27-474d-919c-a1dc54cdffa0")
-	)
-	(no_connect
-		(at 152.4 105.41)
-		(uuid "aab71a5c-81a3-4b52-82e4-e7cbaff67dd9")
-	)
-	(no_connect
 		(at 152.4 35.56)
 		(uuid "b3e896cb-c4ca-40b8-af91-a0e8d8262b7a")
 	)
@@ -4973,10 +4853,6 @@
 		(uuid "bd6e6f9a-98dd-4ad8-b0a2-3e896bdbc8a8")
 	)
 	(no_connect
-		(at 262.89 107.95)
-		(uuid "bf8ec243-77bf-4ab9-9de9-7147ee8c3487")
-	)
-	(no_connect
 		(at 262.89 30.48)
 		(uuid "c3649f96-ecff-4807-bb55-18a0498d6e3e")
 	)
@@ -4985,28 +4861,12 @@
 		(uuid "c8005903-845c-463d-bbfc-c11594d1ca3d")
 	)
 	(no_connect
-		(at 189.23 76.2)
-		(uuid "c86ee457-6fb6-467c-b48c-fd340c3b1657")
-	)
-	(no_connect
-		(at 152.4 76.2)
-		(uuid "d2171ebd-565c-4f4f-943e-43c98da05eff")
-	)
-	(no_connect
 		(at 189.23 30.48)
 		(uuid "db1b38dc-6932-4391-867b-81e04f253b47")
 	)
 	(no_connect
 		(at 104.14 102.87)
 		(uuid "db626670-3b5b-4df5-9bae-cb3826c5b2c8")
-	)
-	(no_connect
-		(at 189.23 105.41)
-		(uuid "dc7ede95-b356-46d6-ad97-17ab5d4700e8")
-	)
-	(no_connect
-		(at 226.06 78.74)
-		(uuid "dd720530-1502-4e46-adda-c3a914834691")
 	)
 	(no_connect
 		(at 152.4 43.18)
@@ -5045,10 +4905,6 @@
 		(uuid "ea333432-f192-4aad-af91-d6bc590b6102")
 	)
 	(no_connect
-		(at 189.23 48.26)
-		(uuid "ecc60ad9-394d-4045-b410-30c0235848ad")
-	)
-	(no_connect
 		(at 226.06 90.17)
 		(uuid "ecd970bb-2257-4592-9cf6-0f94eb49cd58")
 	)
@@ -5057,20 +4913,8 @@
 		(uuid "eef4866f-ad34-42e1-bfb9-9cd5d53e6191")
 	)
 	(no_connect
-		(at 189.23 107.95)
-		(uuid "f1204df8-c705-4de7-b06c-b79aac0d5b93")
-	)
-	(no_connect
-		(at 226.06 105.41)
-		(uuid "f6cafe35-7784-4b4a-a96b-89a753a68b91")
-	)
-	(no_connect
 		(at 152.4 66.04)
 		(uuid "f6d93220-6a8f-453e-9f2c-57a7cd425f5e")
-	)
-	(no_connect
-		(at 189.23 45.72)
-		(uuid "fc20a1f4-7cca-4994-a846-535292bdbca0")
 	)
 	(no_connect
 		(at 189.23 43.18)
@@ -8182,188 +8026,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
-		(at 252.73 40.64 0)
+		(lib_id "Connector:RJ12")
+		(at 179.07 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "05989f2b-99a0-4a9f-be39-13c55b81cd94")
-		(property "Reference" "J11"
-			(at 252.73 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45"
-			(at 252.73 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 252.73 40.005 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 252.73 40.005 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 252.73 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "da63a582-69b4-4288-9a6b-17374872b864")
-		)
-		(pin "3"
-			(uuid "96eaf3b7-ef9f-49c0-86fa-4c0800b00af8")
-		)
-		(pin "2"
-			(uuid "de19fc5d-0e7b-49d8-9322-231a014861a8")
-		)
-		(pin "5"
-			(uuid "a411dfa1-b7c2-4f05-a3ba-6d217b15b14c")
-		)
-		(pin "6"
-			(uuid "3e9fe5e9-f593-40a3-8775-34ce0f5fc519")
-		)
-		(pin "7"
-			(uuid "e9b5ddbe-3df9-48e8-82bb-d60f84daa67e")
-		)
-		(pin "4"
-			(uuid "3a67d28d-400a-412b-8b19-5a45c9248693")
-		)
-		(pin "8"
-			(uuid "ee1f4a38-f5a5-48a3-aeac-e84a0eb17bec")
-		)
-		(instances
-			(project "CertamenBuzzers"
-				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:RJ45")
-		(at 215.9 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07d5a037-8669-4584-ae0a-fcc9a16c250a")
-		(property "Reference" "J7"
-			(at 215.9 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45"
-			(at 215.9 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 215.9 40.005 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 40.005 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 215.9 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0e137778-29a3-4de6-91df-6c5d7cab4479")
-		)
-		(pin "3"
-			(uuid "c2e3545f-7052-475c-8b1e-80be6064a331")
-		)
-		(pin "2"
-			(uuid "9f96aeac-2676-4462-a58e-695d4e8d5466")
-		)
-		(pin "5"
-			(uuid "f8560ac2-4791-4928-8dc1-478a63588500")
-		)
-		(pin "6"
-			(uuid "d6aee425-a187-4192-b7ef-263bba768821")
-		)
-		(pin "7"
-			(uuid "5b7a51bd-98ba-41b9-9eb2-d4d9ee1dfecb")
-		)
-		(pin "4"
-			(uuid "6683f3e3-13da-4bce-ad3f-ceb432660bc7")
-		)
-		(pin "8"
-			(uuid "35833633-0b5d-40cc-9427-b8061b7034e2")
-		)
-		(instances
-			(project "CertamenBuzzers"
-				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:RJ45")
-		(at 179.07 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11962cf3-e940-4a94-83d6-ac14e239fc2a")
-		(property "Reference" "J4"
+		(uuid "093d889e-995a-4136-89a3-d059a4b44ade")
+		(property "Reference" "J5"
 			(at 179.07 53.34 0)
 			(effects
 				(font
@@ -8371,7 +8043,7 @@
 				)
 			)
 		)
-		(property "Value" "RJ45"
+		(property "Value" "RJ12"
 			(at 179.07 55.88 0)
 			(effects
 				(font
@@ -8380,7 +8052,7 @@
 			)
 		)
 		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 179.07 70.485 90)
+			(at 179.07 67.945 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8389,7 +8061,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 70.485 90)
+			(at 179.07 67.945 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8397,43 +8069,117 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 179.07 71.12 0)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 179.07 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "d4b35acf-abdd-4be2-b495-6aad7f934213")
 		)
 		(pin "3"
-			(uuid "8e941fa5-8b65-43f8-9b07-36a272f79cfe")
-		)
-		(pin "2"
-			(uuid "4938b5aa-83f6-4817-a5c1-88dc5d142b57")
-		)
-		(pin "5"
-			(uuid "10f6b21b-a6cd-4e7a-86da-04a1f110661c")
+			(uuid "99c1fa87-f7ee-489f-ad2f-18e61bab57c7")
 		)
 		(pin "6"
-			(uuid "c02de10b-3294-4f3b-84f5-bbf005edcdd1")
+			(uuid "21dc776f-25f1-400c-b895-f68d4b5d1d3d")
 		)
-		(pin "7"
-			(uuid "4988c4ef-2ade-4025-9d75-3d56dc2fde6a")
+		(pin "5"
+			(uuid "8c57523a-28bc-4b06-87d0-cdd7fd3a6261")
 		)
 		(pin "4"
-			(uuid "a65be704-32a4-4aaf-845b-2376801dc9d4")
+			(uuid "28378ffe-1a55-4160-a09a-95f2d07ef22a")
 		)
-		(pin "8"
-			(uuid "231b9f4d-d816-4c49-bf6e-4e3590557268")
+		(pin "2"
+			(uuid "87be1a20-7f82-4805-b1c5-55bd9919be67")
+		)
+		(pin "1"
+			(uuid "8573e346-4768-46a0-8004-93b8f0dbf835")
 		)
 		(instances
 			(project "CertamenBuzzers"
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J4")
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 142.24 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "120a3114-5d05-40c4-9ef7-e5e97715f031")
+		(property "Reference" "J3"
+			(at 142.24 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 142.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
+			(at 142.24 37.465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 37.465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 142.24 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b549b421-028d-4100-b38a-0df720970fb3")
+		)
+		(pin "6"
+			(uuid "66d0785c-ec67-4a0e-b6a4-d4ae0b148159")
+		)
+		(pin "5"
+			(uuid "eadb8869-4e72-4704-b57c-fa0711c39d3d")
+		)
+		(pin "4"
+			(uuid "953587ab-ebd8-448f-88ee-f21d19904cf0")
+		)
+		(pin "2"
+			(uuid "41145d8a-c0d1-4bd4-b991-b1f839abd6bb")
+		)
+		(pin "1"
+			(uuid "fac9859a-2fe6-49dd-ad29-f85737bc462c")
+		)
+		(instances
+			(project "CertamenBuzzers"
+				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8503,92 +8249,6 @@
 			(project ""
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:RJ45")
-		(at 142.24 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1578655b-ddfb-4d08-9467-917494ef905a")
-		(property "Reference" "J10"
-			(at 142.24 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45"
-			(at 142.24 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 142.24 99.695 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 99.695 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 142.24 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6087678f-8f01-463d-88ce-fe25121f540d")
-		)
-		(pin "3"
-			(uuid "31fcdda4-b1bb-4427-b23d-327a1cf442db")
-		)
-		(pin "2"
-			(uuid "9bf96a39-5aad-460f-b530-633d94fca4dd")
-		)
-		(pin "5"
-			(uuid "869c94c3-d938-4a45-bb69-8649f56e2856")
-		)
-		(pin "6"
-			(uuid "a4a4422c-aa6c-41dd-a43f-e2bfacfb58b0")
-		)
-		(pin "7"
-			(uuid "c1e13c38-7a67-4730-a39e-8a92c705a517")
-		)
-		(pin "4"
-			(uuid "fab8c974-eb3a-493d-99f9-dd125bdd8f8a")
-		)
-		(pin "8"
-			(uuid "c60e6465-e49c-4240-9678-33cefb219732")
-		)
-		(instances
-			(project "CertamenBuzzers"
-				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -8731,92 +8391,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
-		(at 142.24 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d69e681-4e0d-40c5-8e99-965e0f977650")
-		(property "Reference" "J6"
-			(at 142.24 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45"
-			(at 142.24 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 142.24 70.485 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 70.485 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 142.24 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40864e3e-128c-46d8-96b2-0470584685d6")
-		)
-		(pin "3"
-			(uuid "b8e4bc9e-03e1-4a7b-a558-c2c7bd0f3d37")
-		)
-		(pin "2"
-			(uuid "ee4c92ee-6107-43e0-a1ac-2f24f0bdcb8e")
-		)
-		(pin "5"
-			(uuid "9a19b191-8e82-4320-abed-44e11e7550af")
-		)
-		(pin "6"
-			(uuid "88630e51-8ead-4895-a806-74fdd1eae03e")
-		)
-		(pin "7"
-			(uuid "a003199f-e58f-47ac-bb82-5881d50e2092")
-		)
-		(pin "4"
-			(uuid "ffcce31a-2f32-48ab-a15d-b2d12a4e8a8b")
-		)
-		(pin "8"
-			(uuid "d0d3041c-e7bd-48f2-bdda-fa2978ddbcb7")
-		)
-		(instances
-			(project "CertamenBuzzers"
-				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 281.94 16.51 0)
 		(unit 1)
@@ -8951,92 +8525,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
-		(at 252.73 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b2c1de7-3923-4d35-9c4c-fc3ee21c1afd")
-		(property "Reference" "J13"
-			(at 252.73 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45"
-			(at 252.73 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 252.73 99.695 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 252.73 99.695 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 252.73 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "426acfc8-1f5c-44b5-8f13-4388b97ce1dc")
-		)
-		(pin "3"
-			(uuid "45d3dbbf-9eec-413b-9592-e71a7847aff7")
-		)
-		(pin "2"
-			(uuid "1b2e1394-7b7b-432b-a628-d780d240d333")
-		)
-		(pin "5"
-			(uuid "0454b574-ec0b-4f29-a58f-393c9ac040f8")
-		)
-		(pin "6"
-			(uuid "73222c69-5dea-45b5-886a-16a77209ba22")
-		)
-		(pin "7"
-			(uuid "bbd9cb1d-0bdb-458d-ad47-73012a3211f2")
-		)
-		(pin "4"
-			(uuid "ebd6ac6e-7cf3-4967-bee0-9d5cd21d6bd9")
-		)
-		(pin "8"
-			(uuid "b7b09b45-b937-4467-8e77-76044a61114f")
-		)
-		(instances
-			(project "CertamenBuzzers"
-				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 17.78 29.21 0)
 		(unit 1)
@@ -9100,92 +8588,6 @@
 			(project ""
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:RJ45")
-		(at 142.24 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3843b1bd-51bf-4fa2-9796-b2d1b788a317")
-		(property "Reference" "J2"
-			(at 142.24 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45"
-			(at 142.24 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 142.24 40.005 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 40.005 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 142.24 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a9d9c37-bde5-4b8e-87c7-7f1a071a5707")
-		)
-		(pin "3"
-			(uuid "af4e1053-dd22-4b26-a0df-cf619961c67c")
-		)
-		(pin "2"
-			(uuid "835054ef-3e14-40db-bee8-f8eddd34e351")
-		)
-		(pin "5"
-			(uuid "7dcdab17-08a7-4f17-90ad-ee02fb3bfe67")
-		)
-		(pin "6"
-			(uuid "c541b504-aa21-473c-a7c7-90609beda730")
-		)
-		(pin "7"
-			(uuid "01b6ed01-0619-4484-b75e-6633cfce528f")
-		)
-		(pin "4"
-			(uuid "66bfe28d-7e78-40c3-a07c-3edb6b5f105c")
-		)
-		(pin "8"
-			(uuid "ca736770-b10d-4413-b7ba-13bf93db7fa3")
-		)
-		(instances
-			(project ""
-				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -9811,92 +9213,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
-		(at 252.73 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66b643d6-7381-4129-b2cd-cfd2e8088db2")
-		(property "Reference" "J12"
-			(at 252.73 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45"
-			(at 252.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 252.73 70.485 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 252.73 70.485 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 252.73 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "edf47c7b-5558-49b5-9265-5c5e867580be")
-		)
-		(pin "3"
-			(uuid "ddc73934-8257-4e89-895d-ec0126e6e4f8")
-		)
-		(pin "2"
-			(uuid "d89d2e63-9c11-4ec8-9eed-36abb71346de")
-		)
-		(pin "5"
-			(uuid "c82a71b5-5e76-4069-b025-e8597785802b")
-		)
-		(pin "6"
-			(uuid "388e44af-c92c-4843-b3bd-03eb4406c1c5")
-		)
-		(pin "7"
-			(uuid "758a225c-b529-4955-b761-0224a904619b")
-		)
-		(pin "4"
-			(uuid "54d6fef2-a1bc-4be7-9fa0-da64fbd60396")
-		)
-		(pin "8"
-			(uuid "a475b37b-2440-4db7-98d1-ee0da5d05dbb")
-		)
-		(instances
-			(project "CertamenBuzzers"
-				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 163.83 85.09 0)
 		(unit 1)
@@ -9960,92 +9276,6 @@
 			(project "CertamenBuzzers"
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:RJ45")
-		(at 179.07 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c40286c-b525-483c-b603-eeed1d6f0420")
-		(property "Reference" "J5"
-			(at 179.07 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RJ45"
-			(at 179.07 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 179.07 99.695 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 99.695 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 179.07 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7199b19a-2100-4fc7-97c9-a50a01b2d892")
-		)
-		(pin "3"
-			(uuid "77404bcc-3328-4610-9277-00fa7a22f216")
-		)
-		(pin "2"
-			(uuid "d69d8320-85e4-42a6-bb24-dd4220c0e160")
-		)
-		(pin "5"
-			(uuid "a8bccd88-d180-476e-819f-43b9101e4cc6")
-		)
-		(pin "6"
-			(uuid "93143414-b3a2-4a82-b963-2298b9f1a929")
-		)
-		(pin "7"
-			(uuid "fcc30edc-7562-4904-bf8b-3c942b09c436")
-		)
-		(pin "4"
-			(uuid "cfd98bd2-e9cc-403a-ade2-ebef5a429e07")
-		)
-		(pin "8"
-			(uuid "9b7427f0-447e-431e-945b-389c9114b533")
-		)
-		(instances
-			(project "CertamenBuzzers"
-				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -10481,6 +9711,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:RJ12")
+		(at 252.73 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73ce04d2-fbae-467e-b92d-6522d57c7e52")
+		(property "Reference" "J12"
+			(at 252.73 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 252.73 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
+			(at 252.73 37.465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 37.465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 252.73 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4f2b6b08-cacc-4c4e-a8de-52038aa6c468")
+		)
+		(pin "6"
+			(uuid "6956cdaa-83aa-45b9-a322-b14afc23cde3")
+		)
+		(pin "5"
+			(uuid "1accf606-1d87-47fa-9c6c-b7f7c627513b")
+		)
+		(pin "4"
+			(uuid "77a6063f-efff-4ec6-ba9a-79c5b4663cb8")
+		)
+		(pin "2"
+			(uuid "29fef0e7-5322-4125-8b98-957c33472370")
+		)
+		(pin "1"
+			(uuid "c8624b4d-1093-4699-9bcc-66c68bb2646b")
+		)
+		(instances
+			(project "CertamenBuzzers"
+				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Protection:TVS1400DRV")
 		(at 73.66 170.18 0)
 		(unit 1)
@@ -10565,25 +9875,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
-		(at 179.07 40.64 0)
+		(lib_id "Connector:RJ12")
+		(at 215.9 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7aba628b-08f8-496d-b0fe-a31023c4bcae")
-		(property "Reference" "J3"
-			(at 179.07 22.86 0)
+		(uuid "7d10dde4-1561-4654-b11b-a73b6cd3ca06")
+		(property "Reference" "J8"
+			(at 215.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "RJ45"
-			(at 179.07 25.4 0)
+		(property "Value" "RJ12"
+			(at 215.9 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10591,7 +9901,7 @@
 			)
 		)
 		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 179.07 40.005 90)
+			(at 215.9 67.945 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10600,7 +9910,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 40.005 90)
+			(at 215.9 67.945 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10608,58 +9918,52 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 179.07 40.64 0)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 215.9 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "da2559b9-b7b5-4350-8795-86908d816c95")
 		)
 		(pin "3"
-			(uuid "5c8c0b6a-d275-49e2-b234-5c5e20c1e068")
-		)
-		(pin "2"
-			(uuid "fb9db30f-673a-4c6a-a663-8c32b2126e71")
-		)
-		(pin "5"
-			(uuid "853b79eb-f707-4465-94b7-0176106dcbea")
+			(uuid "93da5865-20b5-4a96-8f46-b5e10aa65b26")
 		)
 		(pin "6"
-			(uuid "c8f0a32b-1353-4175-8c98-1e0295e2750b")
+			(uuid "ac18dbc6-4cba-4795-bae0-5be831e1c781")
 		)
-		(pin "7"
-			(uuid "92360ef0-04d7-4c91-b59a-bdbd12e59f59")
+		(pin "5"
+			(uuid "048571e1-79c7-4651-b955-e6363d8cdd9b")
 		)
 		(pin "4"
-			(uuid "3d14a780-400c-4184-a1f7-364ed35adabb")
+			(uuid "71d6cfea-257c-4ab3-8b3b-25fcd5a37b89")
 		)
-		(pin "8"
-			(uuid "fc0eadfc-f485-48b0-8b2e-35d31a5ab455")
+		(pin "2"
+			(uuid "c1d726a2-af33-44f1-98cd-8d2c84f63c2c")
+		)
+		(pin "1"
+			(uuid "aa29dd87-d235-4528-88fa-0114ca62cfda")
 		)
 		(instances
 			(project "CertamenBuzzers"
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J3")
+					(reference "J8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
-		(at 215.9 100.33 0)
+		(lib_id "Connector:RJ12")
+		(at 215.9 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7f64186b-53e8-44e3-9c73-fd3cf9ee8a4a")
+		(uuid "800546e6-de3c-433c-a455-b1e1ab9b4b7d")
 		(property "Reference" "J9"
 			(at 215.9 82.55 0)
 			(effects
@@ -10668,7 +9972,7 @@
 				)
 			)
 		)
-		(property "Value" "RJ45"
+		(property "Value" "RJ12"
 			(at 215.9 85.09 0)
 			(effects
 				(font
@@ -10677,7 +9981,7 @@
 			)
 		)
 		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 215.9 99.695 90)
+			(at 215.9 97.155 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10686,7 +9990,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 99.695 90)
+			(at 215.9 97.155 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10694,43 +9998,117 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 215.9 100.33 0)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 215.9 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "8aaec0d8-efdd-46a6-8cfa-5a6c5bfde32d")
 		)
 		(pin "3"
-			(uuid "be6c3bc3-07e8-4a94-ade4-d179c0a28bfa")
-		)
-		(pin "2"
-			(uuid "b1ed50b1-a399-4777-826c-09c952130c94")
-		)
-		(pin "5"
-			(uuid "61e7ec6a-5650-4afe-9666-fac7a4627f4e")
+			(uuid "de5f1ff0-8873-4f00-8298-08c382797984")
 		)
 		(pin "6"
-			(uuid "4d5c8e7d-609a-4628-863f-d3de0d008996")
+			(uuid "1880c674-aea6-4c34-9142-b3f30e5a87c0")
 		)
-		(pin "7"
-			(uuid "5fdea035-8077-430e-adc3-cfeac1014578")
+		(pin "5"
+			(uuid "c8d96c32-b700-4e5d-9e87-d023bd78e6fc")
 		)
 		(pin "4"
-			(uuid "8d248d1d-20dc-4e67-8d2b-3ba8718047ec")
+			(uuid "fe6ba617-1497-4c6e-a5c7-60b8b585dc28")
 		)
-		(pin "8"
-			(uuid "3519f7ba-3ccf-4d6d-b62f-9464f86aed6e")
+		(pin "2"
+			(uuid "164adc83-0054-4886-b469-0280f131d27d")
+		)
+		(pin "1"
+			(uuid "582bda3f-51e0-4257-8ed7-b87d51127660")
 		)
 		(instances
 			(project "CertamenBuzzers"
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 142.24 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8135b237-10bc-4bd0-99bb-bdc5a84534d9")
+		(property "Reference" "J2"
+			(at 142.24 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 142.24 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
+			(at 142.24 67.945 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 67.945 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 142.24 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c0171665-629e-43cb-a6af-58f02da02d05")
+		)
+		(pin "6"
+			(uuid "d7bda661-77f7-4ed7-ad34-f591df49abd3")
+		)
+		(pin "5"
+			(uuid "fe2cedbc-1c28-47e8-af4f-18c946ddf988")
+		)
+		(pin "4"
+			(uuid "9efa903e-102a-46c8-8f21-9ccb8bdc1760")
+		)
+		(pin "2"
+			(uuid "6633d18c-7ca3-497a-8a89-6a92db294526")
+		)
+		(pin "1"
+			(uuid "34cb7e15-bfa8-4a6c-b146-7b6b120e9849")
+		)
+		(instances
+			(project "CertamenBuzzers"
+				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -10871,6 +10249,86 @@
 			(project "CertamenBuzzers"
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
 					(reference "BZ3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 179.07 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "929e6d5c-7488-4918-9371-4ae3a5a5ed93")
+		(property "Reference" "J6"
+			(at 179.07 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 179.07 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
+			(at 179.07 37.465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 37.465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 179.07 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "56117bac-87dd-442b-b338-a029f29aee4c")
+		)
+		(pin "6"
+			(uuid "d73f1b04-111c-47da-bb48-6bfbdd0b6b18")
+		)
+		(pin "5"
+			(uuid "83cf565b-0207-42f2-bf48-ccbfa3a85eb5")
+		)
+		(pin "4"
+			(uuid "93fbe7fc-c678-482b-adaa-c1b82fbd7f27")
+		)
+		(pin "2"
+			(uuid "b753998d-8cad-49e5-8465-ffd7dabf2006")
+		)
+		(pin "1"
+			(uuid "98cdde26-b0c6-4a26-9cbe-9c95e7b42a68")
+		)
+		(instances
+			(project "CertamenBuzzers"
+				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -11359,25 +10817,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
-		(at 215.9 71.12 0)
+		(lib_id "Connector:RJ12")
+		(at 179.07 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b1b1eff6-b8a4-480e-9f2c-441607bee008")
-		(property "Reference" "J8"
-			(at 215.9 53.34 0)
+		(uuid "b09811bc-5505-43d8-8d3f-8bf9571e4ce8")
+		(property "Reference" "J4"
+			(at 179.07 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "RJ45"
-			(at 215.9 55.88 0)
+		(property "Value" "RJ12"
+			(at 179.07 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11385,7 +10843,7 @@
 			)
 		)
 		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
-			(at 215.9 70.485 90)
+			(at 179.07 97.155 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11394,7 +10852,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 70.485 90)
+			(at 179.07 97.155 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11402,43 +10860,37 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 215.9 71.12 0)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 179.07 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "bdd1c975-e26e-416c-b17b-752a5ffae90b")
 		)
 		(pin "3"
-			(uuid "5b4878dc-a3fd-4f6e-a7be-4b80b2fe306d")
-		)
-		(pin "2"
-			(uuid "a52cae83-1c62-4433-bdad-9f7dfbcfff0b")
-		)
-		(pin "5"
-			(uuid "a6dfcad8-d269-4c2a-9bcd-5061a41fa651")
+			(uuid "fa2a10b8-8c58-4728-9076-b78c4aba7471")
 		)
 		(pin "6"
-			(uuid "422fa6d1-8841-4365-a6f0-45d00e36b838")
+			(uuid "78c75496-0cd3-4ef8-84d7-d1ce42aca9f5")
 		)
-		(pin "7"
-			(uuid "961f8b1f-767e-40e6-b5e5-ce200343a28c")
+		(pin "5"
+			(uuid "219d797e-5429-41b5-8bad-9925954de764")
 		)
 		(pin "4"
-			(uuid "5e36f457-53c1-4f68-8756-c9d1da0b6ca3")
+			(uuid "75df6786-bb88-41b6-a0eb-787e757d2e66")
 		)
-		(pin "8"
-			(uuid "4b9dac7d-b547-4596-917f-7ca4aab0a03d")
+		(pin "2"
+			(uuid "d7d468dc-c647-49d3-abbd-c4738d2cfa73")
+		)
+		(pin "1"
+			(uuid "e9cf7995-8bca-46a0-b6ff-3af8ded501bf")
 		)
 		(instances
 			(project "CertamenBuzzers"
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
-					(reference "J8")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -12096,6 +11548,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:RJ12")
+		(at 215.9 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c267c8a5-b7f6-4183-9163-77a97bbe3e23")
+		(property "Reference" "J7"
+			(at 215.9 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 215.9 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
+			(at 215.9 37.465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 37.465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 215.9 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ded89b8e-d36e-4ae3-971a-14601fd5dc6b")
+		)
+		(pin "6"
+			(uuid "623d7f35-25b9-4bd3-8c8d-a6b5faf2e250")
+		)
+		(pin "5"
+			(uuid "a5d8c722-8551-4d23-8793-19f80a4863ca")
+		)
+		(pin "4"
+			(uuid "fd4b9f42-eb3a-4a44-b7db-160a0de458f1")
+		)
+		(pin "2"
+			(uuid "6c48eea1-debf-4c49-96f7-52c388a8f6f3")
+		)
+		(pin "1"
+			(uuid "2c298386-b222-47fe-a0ef-8fce7bd2e726")
+		)
+		(instances
+			(project "CertamenBuzzers"
+				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 175.26 180.34 0)
 		(unit 1)
@@ -12608,6 +12140,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:RJ12")
+		(at 252.73 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbffe06a-15af-4337-a10f-912bdc7a251d")
+		(property "Reference" "J11"
+			(at 252.73 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 252.73 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
+			(at 252.73 67.945 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 67.945 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 252.73 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "39e4fcc6-a40e-4ad8-8b36-c8198f1503d5")
+		)
+		(pin "6"
+			(uuid "9f57f231-acbb-450b-82b7-188c2ada7dc4")
+		)
+		(pin "5"
+			(uuid "3a7d3e61-d323-4a1f-bb9d-af06b8176dea")
+		)
+		(pin "4"
+			(uuid "54026425-7ceb-457e-8a89-3d4f77deb233")
+		)
+		(pin "2"
+			(uuid "58159892-fc3f-4b4e-b060-469da4ddcbc0")
+		)
+		(pin "1"
+			(uuid "12b415e4-78e7-4f30-8211-1c982815ecd5")
+		)
+		(instances
+			(project "CertamenBuzzers"
+				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 100.33 25.4 0)
 		(unit 1)
@@ -12812,6 +12424,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:RJ12")
+		(at 142.24 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e61b8ffe-68a6-48ca-a010-a3398e1bcffa")
+		(property "Reference" "J14"
+			(at 142.24 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 142.24 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
+			(at 142.24 97.155 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 97.155 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 142.24 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6ab71596-d1e8-4e87-8270-a2bc80ec2d7b")
+		)
+		(pin "6"
+			(uuid "e51ea870-1d00-4d66-a6e6-d352c7e6d71a")
+		)
+		(pin "5"
+			(uuid "3f594623-c807-4858-88ef-98f55f165144")
+		)
+		(pin "4"
+			(uuid "96b17d05-5c15-4976-9cec-bbb9c8e37292")
+		)
+		(pin "2"
+			(uuid "29dca254-8619-42d1-be8a-7e21491670ab")
+		)
+		(pin "1"
+			(uuid "173b9d14-0cd7-47be-8590-0496cfeb2cb0")
+		)
+		(instances
+			(project ""
+				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 191.77 0)
 		(unit 1)
@@ -12873,6 +12565,86 @@
 			(project ""
 				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 252.73 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6e30aa1-04f1-472b-adfa-ecb815ca37a5")
+		(property "Reference" "J10"
+			(at 252.73 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 252.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzers:ADAMTECH_MTJ-88ARX1-FSM-LG"
+			(at 252.73 97.155 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 97.155 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 252.73 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "535e0df6-8180-463d-8a99-a92b90bcc541")
+		)
+		(pin "6"
+			(uuid "f79e14a2-f542-4990-b7f5-acf3db7cbe86")
+		)
+		(pin "5"
+			(uuid "d4e1d277-9e49-46f5-8d15-f4bbfcfe1a70")
+		)
+		(pin "4"
+			(uuid "fade3ac6-942d-429c-8854-c96133647472")
+		)
+		(pin "2"
+			(uuid "c57cbc2b-b306-409e-9c7a-cd824eda940f")
+		)
+		(pin "1"
+			(uuid "b400f9fd-3647-49d5-9ded-aeee3057b63d")
+		)
+		(instances
+			(project "CertamenBuzzers"
+				(path "/b43f3344-d0bd-486e-a263-136591dff90e"
+					(reference "J10")
 					(unit 1)
 				)
 			)
