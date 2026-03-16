@@ -1,5 +1,4 @@
 //BUTTON BUZZER PINS
-
 #define A1 5
 #define A2 6
 #define A3 7
@@ -16,12 +15,10 @@
 #define C4 16
 
 //BUZZER BUZZER PINS
-
 #define BZ1 17
 #define BZ2 18
 #define BZ3 19
 #define BZ4 20
 
 //CONSOLE RESET BUTTON
-
 #define RESET 4

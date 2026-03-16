@@ -2,10 +2,7 @@
 
 #include "pinout.h"
 #include "config.h"
-
-volatile int An = -1;
-volatile int Bn = -1;
-volatile int Cn = -1;
+#include <Adafruit_SSD1306.h>
 
 int buzzed[3] = {-1, -1, -1};
 int tA[5] = {A1, A2, A3, A4, 0};
@@ -13,7 +10,7 @@ int tB[5] = {B1, B2, B3, B4, 1};
 int tC[5] = {C1, C2, C3, C4, 2};
 
 bool buzzing = false;
-unsigned long Tbuzz = 0;
+uint32_t Tbuzz = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -33,14 +30,14 @@ void setup() {
   uint32_t last_state = sio_hw->gpio_in;
 }
 
-void buzzed(int player){
+void playerBuzzed(int player){
   //Buzz buzzers
   digitalWrite(BZ1, HIGH);
   digitalWrite(BZ2, HIGH);
   digitalWrite(BZ3, HIGH);
   digitalWrite(BZ4, HIGH);
   
-  bool buzzing = true;
+  buzzing = true;
   Tbuzz = millis();
 
   Serial.println(player);
@@ -48,8 +45,8 @@ void buzzed(int player){
 }
 
 void checkTeam(int[] members){
-  if (members[-1] != buzzed[0] & members[-1] != buzzed[1] & members[-1] != buzzed[2]){
-    for (int i = 0; i < members.length-1; i++){
+  if (members[4] != buzzed[0] & members[4] != buzzed[1] & members[4] != buzzed[2]){
+    for (int i = 0; i < 4; i++){
       int mask = 1 >> members[i];
 
       bool prev = last_state & mask;
@@ -60,8 +57,8 @@ void checkTeam(int[] members){
         while (buzzed[buzzs] != -1){
           buzzs++;
         }
-        buzzed[buzzs] = members[-1];
-        buzzed(members[i]);
+        buzzed[buzzs] = members[4];
+        playerBuzzed(members[i]);
         break;
       }
     }
