@@ -14,6 +14,11 @@
 #define C3 15
 #define C4 16
 
+//SCOREBOARD BUTTONS
+#define SCA 1
+#define SCB 0
+#define SCC 28
+
 //BUZZER BUZZER PINS
 #define BZ1 17
 #define BZ2 18

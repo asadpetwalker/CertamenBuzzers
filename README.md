@@ -6,6 +6,10 @@ A buzzer system for the game Certamen about Roman language, mythology, history, 
 
 I made this because right now buzzer systems are inaccessible. Buzzer systems are sold by JCL, but they have a monopoly over it, so they mark up the prices incredibly even though the electronics are fairly simple, to 800 dollars. for the small version. I made this for my team, because they need a buzzer system to get practice in, since hyperbuzzing is an important strategy in more competitive leagues, as well as the fact that the current version is very bulky and you cannot bring it to places for practice.
 
+# Wiring Diagram
+
+Wire - Button - Wire
+
 # Pictures
 
 ![alt text](<Screenshot from 2026-03-07 22-34-53-1.png>) 

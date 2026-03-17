@@ -14976,6 +14976,32 @@
 		(layer "Edge.Cuts")
 		(uuid "fc571011-ac2a-4c37-b856-e875adc858f6")
 	)
+	(gr_text "Stuyvesant Classics & Certamen"
+		(at 82.25 146.27 0)
+		(layer "F.SilkS" knockout)
+		(uuid "3257ac2c-1451-4b98-995a-f4c375168f18")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "asadpetwalker '27\n"
+		(at 143.93 146.22 0)
+		(layer "F.SilkS" knockout)
+		(uuid "98de04e2-3f1f-43b6-964a-3d094a3c674c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 125.68 99.07)
 		(end 123.18 99.07)
